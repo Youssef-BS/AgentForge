@@ -1,133 +1,67 @@
-AgentForge
+# 🚀 AgentForge
 
-<p align="center">
-  <strong>Build. Connect. Automate. Deploy.</strong>
-</p>
+### Build & Deploy a Full-Stack AI Agent SaaS Platform | Next.js, React, Browserbase
 
-<p align="center">
-  A full-stack AI Agent SaaS platform for building intelligent agents, orchestrating multi-agent workflows, and automating tasks with AI-powered browser capabilities.
-</p>
+**AgentForge** is a modern AI-powered SaaS platform designed to help users build, manage, and deploy intelligent AI agents. Create autonomous agents, connect multiple agents into workflows, automate repetitive tasks, and build AI-powered website bots — all from one centralized platform.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-Framework-black?logo=next.js" />
-  <img src="https://img.shields.io/badge/React-UI-blue?logo=react" />
-  <img src="https://img.shields.io/badge/TypeScript-Language-blue?logo=typescript" />
-  <img src="https://img.shields.io/badge/Browserbase-Browser%20Automation-green" />
-  <img src="https://img.shields.io/badge/Package%20Manager-pnpm-orange?logo=pnpm" />
-</p>
+---
 
-Overview
+## ✨ Features
 
-AgentForge is an AI-powered platform that simplifies the creation, orchestration, and deployment of intelligent AI agents.
+- 🤖 **AI Agent Builder** – Create and configure custom AI agents.
+- 🔗 **Multi-Agent Workflows** – Connect multiple agents to collaborate on complex tasks.
+- ⚡ **Task Automation** – Automate repetitive tasks and business processes.
+- 🌐 **Browser Automation** – Enable AI agents to interact with websites using Browserbase.
+- 💬 **AI Website Bots** – Build intelligent bots that can interact with website visitors.
+- 📊 **Dashboard** – Manage agents, workflows, and automation activities.
+- 🔐 **Authentication** – Secure user authentication and account management.
+- ☁️ **SaaS Architecture** – Designed to support scalable AI-powered applications.
 
-The platform provides an environment where users can create custom agents, connect them into collaborative workflows, automate repetitive operations, and leverage browser automation to interact with web applications.
+## 🛠️ Tech Stack
 
-Whether you're building a personal AI assistant, automating business processes, or developing complex multi-agent systems, AgentForge provides the foundation to turn AI ideas into practical solutions.
+| Technology | Purpose |
+|---|---|
+| Next.js | Full-stack React framework |
+| React | User interface |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Styling and responsive design |
+| Browserbase | Cloud browser infrastructure |
+| AI / LLM APIs | Intelligent agent capabilities |
 
-Key Features
+*Update this list to reflect the technologies and services actually implemented in your project.*
 
-AI Agent Builder — Create and configure intelligent agents for specific tasks and objectives.
+## 📸 Screenshots
 
-Multi-Agent Orchestration — Coordinate multiple agents to collaborate on complex workflows.
+Add screenshots of your application here.
 
-Workflow Automation — Design automated processes that connect agents, tools, and external services.
+```md
+![AgentForge Dashboard](./public/screenshots/dashboard.png)
+```
 
-Browser Automation — Enable agents to interact with websites through Browserbase.
+## 🚀 Getting Started
 
-AI Website Bots — Build intelligent bots to assist website visitors and automate interactions.
+### 1. Clone the repository
 
-Centralized Dashboard — Manage agents, workflows, and execution activities from one interface.
-
-Authentication & User Management — Provide secure access to the platform.
-
-Scalable SaaS Architecture — Build a foundation for expanding AI-powered automation services.
-
-Technology Stack
-
-Technology
-
-Description
-
-Next.js
-
-Full-stack application framework
-
-React
-
-Component-based user interface
-
-TypeScript
-
-Type-safe development
-
-Tailwind CSS
-
-Modern and responsive styling
-
-Browserbase
-
-Cloud browser automation infrastructure
-
-AI / LLM APIs
-
-Intelligent agent capabilities
-
-pnpm
-
-Fast and efficient package management
-
-Architecture
-
-AgentForge is designed around three core layers:
-
-                 AGENTFORGE
-                      |
-          +-----------+-----------+
-          |           |           |
-       Agents      Workflows    Dashboard
-          |           |           |
-          +-----------+-----------+
-                      |
-               AI Orchestration
-                      |
-          +-----------+-----------+
-          |           |           |
-         LLMs      Browserbase   Tools
-          |           |           |
-          +-----------+-----------+
-                      |
-               Task Execution
-
-Getting Started
-
-Prerequisites
-
-Make sure you have installed:
-
-Node.js (LTS recommended)
-
-pnpm
-
-Git
-
-1. Clone the repository
-
+```bash
 git clone https://github.com/YOUR_USERNAME/AgentForge.git
-
 cd AgentForge
+```
 
-2. Install dependencies
+### 2. Install dependencies
 
-pnpm install
+```bash
+npm install
+```
 
-3. Configure environment variables
+### 3. Configure environment variables
 
-Create a .env.local file in the root directory:
+Create a `.env.local` file in the root directory:
 
+```env
 # Application
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-# Clerk Authentication
+# Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 
@@ -137,107 +71,67 @@ BROWSERBASE_PROJECT_ID=
 
 # AI Provider
 OPENAI_API_KEY=
+```
 
-Add the environment variables required by your integrations. Never commit your actual API keys or secrets.
+Add or remove variables according to the integrations enabled in your project. Never commit real API keys or secrets.
 
-4. Start the development server
+### 4. Run the development server
 
-pnpm dev
+```bash
+npm run dev
+```
 
-Open your browser and navigate to:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-http://localhost:3000
+## 📁 Project Structure
 
-5. Build for production
-
-pnpm build
-
-6. Run the production server
-
-pnpm start
-
-Project Structure
-
+```text
 AgentForge/
-├── app/                 # Application routes and pages
+├── app/                 # Next.js application routes
 ├── components/          # Reusable UI components
-├── hooks/               # Custom React hooks
-├── lib/                 # Utilities and shared services
+├── lib/                 # Utilities and shared logic
 ├── public/              # Static assets
+├── hooks/               # Custom React hooks
 ├── types/               # TypeScript definitions
-├── .env.example         # Environment variable template
-├── package.json
-├── pnpm-lock.yaml
-└── README.md
+├── middleware.ts        # Middleware (if applicable)
+├── .env.example         # Environment variables template
+└── package.json
+```
 
-The structure is a reference and should be adjusted to reflect the actual repository.
+*The structure above is illustrative. Adjust it to match your actual repository.*
 
-Roadmap
+## 🧠 Vision
 
-Authentication and user dashboard
+Our goal is to make AI automation accessible by providing a flexible environment where anyone can create intelligent agents, orchestrate multi-agent systems, and automate real-world workflows without unnecessary complexity.
 
-Custom AI agent creation
+## 🗺️ Roadmap
 
-Agent configuration and management
+- [ ] AI Agent Builder
+- [ ] Agent configuration and customization
+- [ ] Multi-agent orchestration
+- [ ] Browser automation with Browserbase
+- [ ] Workflow automation engine
+- [ ] AI-powered website bots
+- [ ] Agent execution history and monitoring
+- [ ] SaaS subscription and billing system
+- [ ] Agent marketplace
 
-AI model integration
+## 🤝 Contributing
 
-Multi-agent orchestration
+Contributions, ideas, and feedback are welcome!
 
-Visual workflow builder
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
 
-Browser automation with Browserbase
+## 📄 License
 
-AI-powered website bots
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-Workflow execution monitoring
-
-Agent execution history
-
-Third-party integrations
-
-Subscription and billing management
-
-Screenshots
-
-Add screenshots of your application to showcase its interface and functionality.
-
-![AgentForge Dashboard](./public/screenshots/dashboard.png)
-
-Contributing
-
-Contributions, suggestions, and feature requests are welcome.
-
-Fork the repository.
-
-Create a feature branch:
-
-git checkout -b feature/your-feature
-
-Commit your changes:
-
-git commit -m "feat: add your feature"
-
-Push your branch:
-
-git push origin feature/your-feature
-
-Open a Pull Request.
-
-Security
-
-Keep API keys and credentials in environment variables.
-
-Never commit .env.local or other files containing secrets.
-
-Report security vulnerabilities privately to the repository maintainer.
-
-License
-
-This project is distributed under the MIT License. See the LICENSE file for more information.
+---
 
 <p align="center">
-  <strong>AgentForge</strong>
-  <br/>
-  Build intelligent agents. Orchestrate workflows. Automate everything.
+  <strong>AgentForge</strong><br/>
+  Build. Connect. Automate. Deploy.
 </p>
